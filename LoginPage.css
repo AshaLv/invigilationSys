@@ -1,0 +1,22 @@
+body {
+  background: url("bg_note.jpg") no-repeat;
+  background-size: cover;
+}
+footer {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  color: #fff;
+}
+.loginFade{
+	margin: 111px auto;
+
+}
+.EmailSource:hover{
+	 background: rgba(91, 85, 69, 1);
+	 cursor:pointer; 
+}
+
+
+
+

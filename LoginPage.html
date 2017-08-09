@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+<title>loginPage</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="LoginPage.css">
+<link rel="stylesheet" href="../shoeForDunk/bootstrap/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  </style>
+</head>
+<body>
+<div class="container-fluid" style="background-color:#F0FFFF;color:#fff;height:150px;">
+<div style="color:#000000;">
+  <h1>教师监考系统</h1>
+  <h2>欢迎使用</h2>
+  <h1></h1>
+</div>
+</div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul class="nav navbar-nav">
+  </ul>
+</nav>
+<br><br><b></b><br><br><br>
+<!--bootstrap的登录效果模板-->
+    <div align="center"><h2></h2></div>
+    <div align="center"><button type="button" class="btn btn-primary btn-lg loginButton" data-toggle="modal" data-target="#myModal"  >
+      登入教师监考安排系统
+    </button></div>
+    <!-- Modal -->
+    <div class="modal fade loginFade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+                <div class="modal-content">
+                      <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">教师监考系统</h4>
+                      </div>
+                                  <div class="modal-body">
+                                    <form action="AccountChecking.jsp" method="post" name="loginForm">
+                                        <p>您的帐号：<input  class="form-control" type="text" name="IDNumber" required></p>
+                                        <p>您的密码：<input class="form-control" type="password" name="Password"  required></p>
+                                        <input type="radio" name="occupation" value="manager" checked> 管理员
+                                        <input type="radio" name="occupation" value="teacher">教师<br><br>    
+                                        <input class="btn-success" type="submit" name="submit"  value="登入">                    
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    
+                                  </div>
+                </div>
+        </div>
+    </div>
+    <script src="jquery-1.12.4.js"></script>
+    <script src="../shoeForDunk/bootstrap/js/bootstrap.min.js"></script>
+  
+
+<!-- footer -->
+        <footer>
+            &copy; Xinshuai 2016
+        </footer>
+</body>
+</html>
